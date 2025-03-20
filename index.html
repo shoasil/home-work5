@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Styles</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .block {
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .block1 { display: block; background-color: rgb(230, 173, 173); }
+        .block2 { display: inline; background-color: lightcoral; }
+        .block3 { display: inline-block; background-color: rgb(67, 6, 6); }
+        .block4 { display: flex; justify-content: center; background-color: rgb(144, 144, 32); }
+        .block5 { display: grid; place-items: center; background-color: rgb(122, 171, 255); }
+        .block6 { display: none; background-color: rgb(0, 0, 0); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block block1">Block</div>
+        <div class="block block2">Inline</div>
+        <div class="block block3">Inline-block</div>
+        <div class="block block4">Flex</div>
+        <div class="block block5">Grid</div>
+        <div class="block block6">None (не виден)</div>
+    </div>
+</body>
+</html>
